@@ -1,0 +1,70 @@
+{
+  "name": "vue",
+  "displayName": "vue",
+  "description": "Vue with python support",
+  "author":"Jesus Zerpa",
+  "repository":"https://github.com/JesusZerpa/vscode-pyvue-extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "vue",
+      "aliases": ["Python Vue", "vue"],
+      "extensions": [".vue"],
+      "configuration": "./language-configuration.json",
+      "embeddedLanguages": {
+          "text.html.basic": "html",
+          "text.html.vue-html": "vue-html",
+          "text.pug": "jade",
+          "text.haml": "haml",
+          "source.css": "css",
+          "source.css.scss": "scss",
+          "source.css.less": "less",
+          "source.css.postcss": "postcss",
+          "source.sass": "sass",
+          "source.stylus": "stylus",
+          "source.js": "javascript",
+          "source.ts": "typescript",
+          "source.coffee": "coffeescript",
+          "text.html.markdown": "md",
+          "source.yaml": "yaml",
+          "source.json": "json",
+          "source.php": "php",
+          "source.py": "python",
+          "meta.embedded.block.python":"python"
+        }
+
+    }],
+    "grammars": [{
+      "language": "vue",
+      "scopeName": "source.vue",
+      "path": "./syntaxes/vue.tmLanguage.json",
+      "embeddedLanguages": {
+          "text.html.basic": "html",
+          "text.html.vue-html": "vue-html",
+          "text.pug": "jade",
+          "text.haml": "haml",
+          "source.css": "css",
+          "source.css.scss": "scss",
+          "source.css.less": "less",
+          "source.css.postcss": "postcss",
+          "source.sass": "sass",
+          "source.stylus": "stylus",
+          "source.js": "javascript",
+          "source.ts": "typescript",
+          "source.coffee": "coffeescript",
+          "text.html.markdown": "md",
+          "source.yaml": "yaml",
+          "source.json": "json",
+          "source.php": "php",
+          "source.py": "python",
+          "meta.embedded.block.python":"python"
+        }
+    }]
+  }
+}
